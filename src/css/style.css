@@ -1,60 +1,149 @@
-html {
-    height: 100%;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-    display: block;
-}
-
-body {
-    font: 12px/18px Arial, sans-serif;
-    height: 100%;
-}
-
-.wrapper {
-    width: 100%;
-    min-width: 1024px;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-}
-
-
-/* Header
+            html {
+                height: 100%;
+            }
+            
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            main,
+            nav,
+            section,
+            summary {
+                display: block;
+            }
+            
+            body {
+                background: url(../images/bg_body.jpg) repeat 0 0;
+                font: 12px/18px Arial, sans-serif;
+                font-family: Verdana, Arial, sans-serif;
+                height: 100%;
+            }
+            
+            .wrapper {
+                width: 100%;
+                min-width: 1024px;
+                min-height: 100%;
+                height: auto !important;
+                height: 100%;
+            }
+            
+            a {
+                color: #000000;
+                text-decoration: underline;
+            }
+            
+            a:hover {
+                text-decoration: none;
+            }
+            
+            h1 {
+                font-family: Georgia, 'Times New Roman', serif;
+                font-weight: normal;
+                line-height: normal;
+                font-size: 22px;
+                margin-bottom: 16px;
+                color: #000000;
+            }
+            /* Header
 -----------------------------------------------------------------------------*/
-
-.header {
-    height: 200px;
-    background: #FFE680;
-}
-
-
-/* Middle
+            
+            .header {
+                height: 200px;
+                position: relative;
+            }
+            
+            .header .logo {
+                position: absolute;
+                left: 112px;
+                bottom: 94px;
+            }
+            
+            .header .phone {
+                position: absolute;
+                right: 102px;
+                bottom: 94px;
+                font-family: Verdana, Arial, sans-serif;
+                color: #000000;
+            }
+            
+            .header .phone .phonecode {
+                font-size: 13px;
+            }
+            
+            .header .phone .phonenumber {
+                font-size: 22px;
+            }
+            /* Middle
 -----------------------------------------------------------------------------*/
-
-.content {
-    padding: 0 0 150px;
-}
-
-
-/* Footer
+            
+            .middle {
+                width: 100%;
+                padding: 0 0 150px;
+                position: relative;
+            }
+            
+            .middle:after {
+                display: table;
+                clear: both;
+                content: '';
+            }
+            
+            .container {
+                width: 100%;
+                float: left;
+                overflow: hidden;
+            }
+            
+            .content {
+                padding: 0 0 0 270px;
+            }
+            /* Left Sidebar
 -----------------------------------------------------------------------------*/
-
-.footer {
-    margin: -150px auto 0;
-    min-width: 1024px;
-    height: 150px;
-    background: #BFF08E;
-    position: relative;
-}
+            
+            .left-sidebar {
+                float: left;
+                width: 250px;
+                margin-left: -100%;
+                position: relative;
+            }
+            
+            .left-sidebar .mainmenu {
+                position: absolute;
+                left: 112px;
+                text-decoration: none;
+                font-size: 30px;
+                font-family: Verdana, Arial, sans-serif;
+                color: #000000;
+            }
+            
+            .left-sidebar .mainmenu .menu-item {
+                color: #000000;
+                padding-bottom: 15px;
+            }
+            
+            .left-sidebar .mainmenu .menu-item a {
+                text-decoration: none;
+                vertical-align: middle;
+            }
+            
+            .left-sidebar .mainmenu .menu-item.active a {
+                background: url(../images/bg_menu-item-active.png) no-repeat 0;
+                color: #ffffff;
+                vertical-align: middle;
+            }
+            
+            background: url(../images/bg_menu-item-active.png) no-repeat center 0;
+            /* Footer
+-----------------------------------------------------------------------------*/
+            
+            .footer {
+                margin: -150px auto 0;
+                min-width: 1024px;
+                height: 150px;
+                position: relative;
+            }
