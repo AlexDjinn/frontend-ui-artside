@@ -102,6 +102,19 @@
             .content {
                 padding: 0 0 0 270px;
             }
+            
+            .maintext p {
+                margin-top: 20px;
+            }
+            
+            .team {}
+            
+            .pictface img {
+                position: relative;
+                width: 77px;
+                height: auto;
+                
+            }
             /* Left Sidebar
 -----------------------------------------------------------------------------*/
             
