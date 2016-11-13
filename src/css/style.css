@@ -107,13 +107,14 @@
                 margin-top: 20px;
             }
             
-            .team {}
-            
             .pictface img {
                 position: relative;
                 width: 77px;
                 height: auto;
-                
+            }
+            
+            .team {
+                display: inline;
             }
             /* Left Sidebar
 -----------------------------------------------------------------------------*/
